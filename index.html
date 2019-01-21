@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My paint</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<h1>My Paint</h1>
+		<div class="picto">
+			<button class="fas fa-pen" id="pen"></button>
+			<button class="fas fa-slash" id="line"></button>
+			<button class="fas fa-fill-drip"  id="filling"></button>
+			<button class="far fa-square" id="square"></button>
+			<button class="fas fa-square" id="square_full"></button>
+			<button class="far fa-circle" id="circle"></button>
+			<button class="fas fa-circle" id="circle_full"></button>
+			<button class="fas fa-eraser" id="eraser"></button>
+			<label for="weight">Epaisseur : </label>
+			<select id="weight">
+				<option value="1">1</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+			</select>
+			<label for="weight">Couleurs : </label>
+			<input type="color" name="color" id="color">
+		</div>
+		<div class="picto2">
+			<button class="fas fa-save" id="btn-save"></button>
+		</div>
+	</header>
+
+	<canvas id="canvas" width="1410" height="650"></canvas>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+	
+	<script type="text/javascript" src="js/canvas.js"></script>
+</body>
+</html>
